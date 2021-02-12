@@ -17,6 +17,7 @@
     "start": "node main.js"
   },
   "dependencies": {
-    "later": "^1.2.0"
+    "later": "^1.2.0",
+    "moocauto": "^1.0.0"
   }
 }

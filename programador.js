@@ -1,5 +1,5 @@
 // Importar modulo Events.js
-const EventEmitter = require('events');
+const EventEmitter = require('./events');
 
 // Importar modulo Later.js:
 const later = require('later');
@@ -43,7 +43,6 @@ class Programador extends EventEmitter {
 			
 			later.setInterval( () => {
 				console.log(`${horaTemp.hora} - cambio temperatura ideal a: ${horaTemp.temperatura}ºC`)
-				// console.log(horaTemp.hora + " - cambio temperatura ideal a : " + horaTemp.temperatura)
 				this.emit('ideal', horaTemp.temperatura);
 			}, sch)
 		})
